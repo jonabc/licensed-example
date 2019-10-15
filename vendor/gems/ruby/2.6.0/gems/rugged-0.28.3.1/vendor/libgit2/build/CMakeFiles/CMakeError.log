@@ -1,0 +1,179 @@
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIM failed with the following output:
+Change Dir: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3f31d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3f31d.dir/build.make CMakeFiles/cmTC_3f31d.dir/build
+Building C object CMakeFiles/cmTC_3f31d.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fPIC -DHAVE_STRUCT_STAT_ST_MTIM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -o CMakeFiles/cmTC_3f31d.dir/src.c.o   -c /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c
+/Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c:7:36: error: no member named 'st_mtim' in 'struct stat'
+  (void)sizeof(((struct stat *)0)->st_mtim);
+               ~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3f31d.dir/src.c.o] Error 1
+make: *** [cmTC_3f31d/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtim);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_MTIME_NSEC failed with the following output:
+Change Dir: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4b9c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_f4b9c.dir/build.make CMakeFiles/cmTC_f4b9c.dir/build
+Building C object CMakeFiles/cmTC_f4b9c.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fPIC -DHAVE_STRUCT_STAT_MTIME_NSEC -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -o CMakeFiles/cmTC_f4b9c.dir/src.c.o   -c /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c
+/Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c:6:36: error: no member named 'st_mtime_nsec' in 'struct stat'; did you mean 'st_mtimespec'?
+  (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+                                   ^~~~~~~~~~~~~
+                                   st_mtimespec
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/sys/stat.h:182:13: note: 'st_mtimespec' declared here
+struct stat __DARWIN_STRUCT_STAT64;
+            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/sys/stat.h:166:2: note: expanded from macro '__DARWIN_STRUCT_STAT64'
+        __DARWIN_STRUCT_STAT64_TIMES \
+        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/sys/stat.h:130:18: note: expanded from macro '__DARWIN_STRUCT_STAT64_TIMES'
+        struct timespec st_mtimespec;           /* time of last data modification */ \
+                        ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_f4b9c.dir/src.c.o] Error 1
+make: *** [cmTC_f4b9c/fast] Error 2
+
+
+Source file was:
+
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_nsec);
+  return 0;
+}
+
+Determining if the prototype qsort_r exists for HAVE_QSORT_R_GNU failed with the following output:
+Change Dir: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2c127/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_2c127.dir/build.make CMakeFiles/cmTC_2c127.dir/build
+Building C object CMakeFiles/cmTC_2c127.dir/CheckPrototypeDefinition.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -o CMakeFiles/cmTC_2c127.dir/CheckPrototypeDefinition.c.o   -c /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:6: error: conflicting types for 'qsort_r'
+void qsort_r(void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *, void *), void *arg) {
+     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/stdlib.h:339:7: note: previous declaration is here
+void     qsort_r(void *__base, size_t __nel, size_t __width, void *,
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2c127.dir/CheckPrototypeDefinition.c.o] Error 1
+make: *** [cmTC_2c127/fast] Error 2
+
+
+
+#include <stdlib.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef qsort_r
+  cmakeRequireSymbol(0, &qsort_r);
+#endif
+}
+
+void qsort_r(void *base, size_t nmemb, size_t size, int (*compar)(const void *, const void *, void *), void *arg) {
+  return ;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the function qsort_s exists failed with the following output:
+Change Dir: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_115c9/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_115c9.dir/build.make CMakeFiles/cmTC_115c9.dir/build
+Building C object CMakeFiles/cmTC_115c9.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DCHECK_FUNCTION_EXISTS=qsort_s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -o CMakeFiles/cmTC_115c9.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.15.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_115c9
+/usr/local/Cellar/cmake/3.15.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_115c9.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DCHECK_FUNCTION_EXISTS=qsort_s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_115c9.dir/CheckFunctionExists.c.o  -o cmTC_115c9 
+Undefined symbols for architecture x86_64:
+  "_qsort_s", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_115c9] Error 1
+make: *** [cmTC_115c9/fast] Error 2
+
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_56e3e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_56e3e.dir/build.make CMakeFiles/cmTC_56e3e.dir/build
+Building C object CMakeFiles/cmTC_56e3e.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DCHECK_FUNCTION_EXISTS=clock_gettime -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -o CMakeFiles/cmTC_56e3e.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.15.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_56e3e
+/usr/local/Cellar/cmake/3.15.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56e3e.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DCHECK_FUNCTION_EXISTS=clock_gettime -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_56e3e.dir/CheckFunctionExists.c.o  -o cmTC_56e3e  -L/Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/time.h -Wl,-rpath,/Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/time.h -lrt 
+ld: warning: directory not found for option '-L/Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/time.h'
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_56e3e] Error 1
+make: *** [cmTC_56e3e/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test IS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED failed with the following output:
+Change Dir: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8f53a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_8f53a.dir/build.make CMakeFiles/cmTC_8f53a.dir/build
+Building C object CMakeFiles/cmTC_8f53a.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DIS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -Wimplicit-fallthrough=1 -o CMakeFiles/cmTC_8f53a.dir/src.c.o   -c /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp/src.c
+warning: unknown warning option '-Wimplicit-fallthrough=1'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
+1 warning generated.
+Linking C executable cmTC_8f53a
+/usr/local/Cellar/cmake/3.15.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f53a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DIS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8f53a.dir/src.c.o  -o cmTC_8f53a 
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the function iconv_open exists failed with the following output:
+Change Dir: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1235c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1235c.dir/build.make CMakeFiles/cmTC_1235c.dir/build
+Building C object CMakeFiles/cmTC_1235c.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DCHECK_FUNCTION_EXISTS=iconv_open -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -o CMakeFiles/cmTC_1235c.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.15.4/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1235c
+/usr/local/Cellar/cmake/3.15.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1235c.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -D_GNU_SOURCE -fPIC -Wall -Wextra -Wdocumentation -Wno-missing-field-initializers -Wstrict-aliasing -Wstrict-prototypes -Wdeclaration-after-statement -Wshift-count-overflow -Wunused-const-variable -Wunused-function -Wformat -Wformat-security -Wint-conversion -Wno-documentation-deprecated-sync -DCHECK_FUNCTION_EXISTS=iconv_open -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1235c.dir/CheckFunctionExists.c.o  -o cmTC_1235c 
+Undefined symbols for architecture x86_64:
+  "_iconv_open", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_1235c] Error 1
+make: *** [cmTC_1235c/fast] Error 2
+
+
+

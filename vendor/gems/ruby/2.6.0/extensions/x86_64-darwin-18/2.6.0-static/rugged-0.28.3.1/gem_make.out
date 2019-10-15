@@ -1,0 +1,163 @@
+current directory: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/ext/rugged
+/Users/jonabc/.rbenv/versions/2.6.4/bin/ruby -I /Users/jonabc/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20191014-97420-tppsvr.rb extconf.rb
+checking for gmake... no
+checking for make... yes
+checking for cmake... yes
+checking for pkg-config... yes
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/local/bin/pkg-config (found version "0.29.2") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC - Success
+-- Performing Test HAVE_STRUCT_STAT_MTIME_NSEC
+-- Performing Test HAVE_STRUCT_STAT_MTIME_NSEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_NSEC
+-- Performing Test HAVE_STRUCT_STAT_NSEC - Success
+-- Performing Test IS_WALL_SUPPORTED
+-- Performing Test IS_WALL_SUPPORTED - Success
+-- Performing Test IS_WEXTRA_SUPPORTED
+-- Performing Test IS_WEXTRA_SUPPORTED - Success
+-- Performing Test IS_WDOCUMENTATION_SUPPORTED
+-- Performing Test IS_WDOCUMENTATION_SUPPORTED - Success
+-- Performing Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED
+-- Performing Test IS_WNO_MISSING_FIELD_INITIALIZERS_SUPPORTED - Success
+-- Performing Test IS_WSTRICT_ALIASING_SUPPORTED
+-- Performing Test IS_WSTRICT_ALIASING_SUPPORTED - Success
+-- Performing Test IS_WSTRICT_PROTOTYPES_SUPPORTED
+-- Performing Test IS_WSTRICT_PROTOTYPES_SUPPORTED - Success
+-- Performing Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED
+-- Performing Test IS_WDECLARATION_AFTER_STATEMENT_SUPPORTED - Success
+-- Performing Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED
+-- Performing Test IS_WSHIFT_COUNT_OVERFLOW_SUPPORTED - Success
+-- Performing Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED
+-- Performing Test IS_WUNUSED_CONST_VARIABLE_SUPPORTED - Success
+-- Performing Test IS_WUNUSED_FUNCTION_SUPPORTED
+-- Performing Test IS_WUNUSED_FUNCTION_SUPPORTED - Success
+-- Performing Test IS_WFORMAT_SUPPORTED
+-- Performing Test IS_WFORMAT_SUPPORTED - Success
+-- Performing Test IS_WFORMAT_SECURITY_SUPPORTED
+-- Performing Test IS_WFORMAT_SECURITY_SUPPORTED - Success
+-- Performing Test IS_WINT_CONVERSION_SUPPORTED
+-- Performing Test IS_WINT_CONVERSION_SUPPORTED - Success
+-- Performing Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED
+-- Performing Test IS_WNO_DOCUMENTATION_DEPRECATED_SYNC_SUPPORTED - Success
+-- Looking for regcomp_l
+-- Looking for regcomp_l - found
+-- Looking for futimens
+-- Looking for futimens - found
+-- Checking prototype qsort_r for HAVE_QSORT_R_BSD - True
+-- Checking prototype qsort_r for HAVE_QSORT_R_GNU - False
+-- Looking for qsort_s
+-- Looking for qsort_s - not found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - not found
+-- Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the system variable OPENSSL_ROOT_DIR (missing: OPENSSL_INCLUDE_DIR) 
+-- Found Security /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework
+-- Looking for SSLCreateContext in /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework
+-- Looking for SSLCreateContext in /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework - found
+-- Found CoreFoundation /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreFoundation.framework
+-- Could NOT find HTTP_Parser (missing: HTTP_PARSER_INCLUDE_DIR HTTP_PARSER_LIBRARY) 
+-- http-parser version 2 was not found or disabled; using bundled 3rd-party sources.
+-- Performing Test IS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED
+-- Performing Test IS_WIMPLICIT_FALLTHROUGH_1_SUPPORTED - Failed
+-- Found ZLIB: /usr/lib/libz.dylib (found version "1.2.11") 
+-- Checking for module 'libssh2'
+--   Package 'libssl', required by 'libssh2', not found
+-- LIBSSH2 not found. Set CMAKE_PREFIX_PATH if it is installed outside of the default search path.
+-- Looking for iconv_open
+-- Looking for iconv_open - not found
+-- Found Iconv: -L/usr/lib -liconv
+-- Enabled features:
+ * threadsafe, threadsafe support
+ * HTTPS, using SecureTransport
+ * SHA, using CollisionDetection
+ * http-parser, http-parser support (bundled)
+ * zlib, using system zlib
+ * iconv, iconv encoding conversion support
+
+-- Disabled features:
+ * debugpool, debug pool allocator
+ * tracing, tracing support
+ * SSH, SSH transport support
+ * SPNEGO, SPNEGO authentication support
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/vendor/libgit2/build
+ -- /usr/bin/make
+checking for -lgit2... yes
+checking for git2.h... yes
+creating Makefile
+
+current directory: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/ext/rugged
+make "DESTDIR=" clean
+
+current directory: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/ext/rugged
+make "DESTDIR="
+compiling rugged.c
+rugged.c:318:1: warning: function 'rugged_exception_raise' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling rugged_allocator.c
+compiling rugged_backend.c
+compiling rugged_blame.c
+compiling rugged_blob.c
+compiling rugged_branch.c
+compiling rugged_branch_collection.c
+compiling rugged_commit.c
+rugged_commit.c:552:15: warning: implicit conversion loses integer precision: 'VALUE' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+        if ((error = parse_commit_options(&commit_data, repo, rb_data)) < 0)
+                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rugged_commit.c:802:15: warning: implicit conversion loses integer precision: 'VALUE' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+        if ((error = parse_commit_options(&commit_data, repo, rb_data)) < 0)
+                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling rugged_config.c
+compiling rugged_cred.c
+compiling rugged_diff.c
+compiling rugged_diff_delta.c
+compiling rugged_diff_hunk.c
+compiling rugged_diff_line.c
+compiling rugged_index.c
+compiling rugged_note.c
+compiling rugged_object.c
+compiling rugged_patch.c
+compiling rugged_rebase.c
+compiling rugged_reference.c
+compiling rugged_reference_collection.c
+compiling rugged_remote.c
+compiling rugged_remote_collection.c
+compiling rugged_repo.c
+compiling rugged_revwalk.c
+compiling rugged_settings.c
+compiling rugged_signature.c
+compiling rugged_submodule.c
+compiling rugged_submodule_collection.c
+compiling rugged_tag.c
+compiling rugged_tag_collection.c
+compiling rugged_tree.c
+rugged_tree.c:615:13: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+        nupdates = RARRAY_LEN(rb_updates);
+                 ~ ^~~~~~~~~~~~~~~~~~~~~~
+/Users/jonabc/.rbenv/versions/2.6.4/include/ruby-2.6.0/ruby/ruby.h:1058:23: note: expanded from macro 'RARRAY_LEN'
+#define RARRAY_LEN(a) rb_array_len(a)
+                      ^~~~~~~~~~~~~~~
+1 warning generated.
+linking shared-object rugged/rugged.bundle
+
+current directory: /Users/jonabc/jonabc/licensed-example/vendor/gems/ruby/2.6.0/gems/rugged-0.28.3.1/ext/rugged
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 rugged.bundle ./.gem.20191014-97420-18972ri/rugged
