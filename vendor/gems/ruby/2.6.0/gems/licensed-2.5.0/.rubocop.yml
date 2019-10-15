@@ -1,8 +1,0 @@
-inherit_gem:
-  rubocop-github:
-    - config/default.yml
-
-AllCops:
-  Exclude:
-    - test/fixtures/**/*
-    - vendor/gems/**/*
